@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calorie Mate</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+    🌿 Calorie Mate
+</div>
+
+<button id="themeToggle" class="theme-btn">
+    🌙 Dark
+</button>
+
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="progress.html">Progress</a></li>
+            <li><a href="#">Profile</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="hero-text">
+
+            <h1>
+                Eat Smart.<br>
+                Live Healthy.
+            </h1>
+
+            <p>
+                Track your calories, protein, water intake,
+                and weight—all in one beautiful place.
+            </p>
+
+            <button class="start-btn">
+                Get Started
+            </button>
+
+        </div>
+
+        <div class="hero-image">
+            🥗
+        </div>
+
+    </section>
+
+    <!-- Dashboard -->
+    <section class="dashboard">
+
+        <h2>Today's Summary</h2>
+
+        <div class="card-container">
+
+            <div class="card">
+                <h3>🔥 Calories</h3>
+               
+                <p id="totalCalories">0 / 2200 kcal</p>
+                <p id="calorieStatus" class="status">🔴 Very Low</p>
+            </div>
+
+            <div class="card">
+                <h3>💪 Protein</h3>
+                <p id="totalProtein">0 /60 g</p>
+                <p id="proteinStatus" class="status">🔴 Very Low</p>
+            </div>
+
+            <div class="card">
+                <h3>🍚 Carbs</h3>
+                <p id="totalCarbs">0 /300 g</p>
+                <p id="carbsStatus" class="status">🔴 Very Low</p>
+                
+            </div>
+
+            <div class="card">
+                <h3>🥑 Fat</h3>
+                <p id="totalFat">0/60 g</p>
+                <p id="fatStatus" class="status">🔴 Very Low</p>
+            </div>
+
+            <div class="card">
+
+    <h3>💧 Water</h3>
+
+    <p id="waterCount">0 / 8 Glasses</p>
+    <p id="waterStatus" class="status">🔴 Very Low</p>
+
+    <div class="progress">
+
+        <div id="waterProgress" class="progress-fill"></div>
+
+    </div>
+
+    <button id="addWaterBtn">+1 Glass</button>
+
+    <button id="resetWaterBtn">Reset</button>
+
+</div>
+
+            <div class="card">
+    <h3>⚖ Weight</h3>
+    <p>37.5 kg</p>
+</div>
+
+<div class="card">
+
+    <h3>⭐ Daily Rating</h3>
+
+    <h2 id="dailyStars">☆☆☆☆☆</h2>
+
+    <p id="dailyScore">0%</p>
+
+    <p id="ratingMessage">
+        Start adding meals to see today's rating.
+    </p>
+
+</div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Add Food -->
+    <section class="add-food">
+
+        <h2>Add Food</h2>
+
+        <div class="food-form">
+
+            <!-- Search Box -->
+            <div class="search-container">
+
+                <input
+                    type="text"
+                    id="foodName"
+                    placeholder="Search Food"
+                    autocomplete="off">
+
+                <div id="suggestions"></div>
+
+            </div>
+
+            <input
+                type="number"
+                id="quantity"
+                placeholder="Quantity">
+
+            <select id="unit">
+                <option>g</option>
+                <option>ml</option>
+                <option>piece</option>
+            </select>
+
+            <select id="meal">
+                <option>Breakfast</option>
+                <option>Lunch</option>
+                <option>Snack</option>
+                <option>Dinner</option>
+            </select>
+
+            <button id="addFoodBtn">
+                Add Food
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- Today's Meals -->
+    <section class="today-meals">
+
+        <h2>Today's Meals</h2>
+
+        <div id="mealList">
+            <p>No food added yet.</p>
+        </div>
+
+    </section>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
